@@ -41,10 +41,10 @@ console.log(sum);
 //Practice Questions
 // 1-->
 let numbers = [1,2,3,4,5];
-let square = numbers.map((num)=>{
-    return num*num;
-});
-console.log(square);
+// let square = numbers.map((num)=>{
+//     return num*num;
+// });
+// console.log(square);
 // 2-->
 let greater = numbers.filter((num)=>{
     return num>2;
@@ -67,3 +67,34 @@ console.log(greet("Rudra"));
 // task 3-->
 let isEven = n =>  n%2===0 ? true : false;
 console.log(isEven(4));
+//Practice
+// Task 1-->
+let isGreater = (a,b) => a>b?a:b;
+console.log(isGreater(7,4))
+// Task 2-->
+let length=(a)=>{
+    return a.length;
+}
+console.log(length("Rudra"));
+//Task 3-->
+//Arrow functions shall always return a value 
+//Final function Practice
+//Task 1 -->
+const square = n => n*n;
+console.log(square(2))
+//Task 2-->
+let sumArray = (...elements) => elements.reduce((sum,num)=>{
+    return sum+num;
+},0);
+console.log(sumArray(1,2,3,4,5))
+//Task 3-->
+// Return sends the value and stores it in function name while console.log prints the value in console
+/**
+ * task 1-->
+ * Hello Rudra
+ * task 2-->
+ * undefined
+ * task 3-->
+ * it works because an array named numbers is being passed inside map() and it takes each element of it one by one and performs loggic 
+ * of num * 2 and returns the array 
+ */
