@@ -70,4 +70,6 @@ console.log("End");
  * comes first into the queue
  * Queue ordering tells about which code block will be executed first
  * yess timer completion order matters because it tell which execution block is being transferred to callback queue
+ * 
+ * 
  */
