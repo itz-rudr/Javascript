@@ -71,5 +71,16 @@ console.log("End");
  * Queue ordering tells about which code block will be executed first
  * yess timer completion order matters because it tell which execution block is being transferred to callback queue
  * 
- * 
+ * Mini challenge 3-->
+ * output-->
+ * Start
+ * End
+ * A 
+ * B 
+ *2.-> B excecutes last as each setTimeout function is inside one another and each is considered as sepaerate block 
+ *3.-> Second time enter callback queue after the first time as it is inside It
+ *4.-> B enter the callback Queue after the first Timeout
+ *5.-> Start -> call stack -> executed -> setTimeout(A) -> Enters web API -> A -> enters callback queue -> SetTimeout(B)
+ *    -> enters web API -> B -> enters callback Queue -> End -> enters Call stack -> executed -> event loop checks ->
+ *    checks call stack is empty -> callback queue is executed
  */
